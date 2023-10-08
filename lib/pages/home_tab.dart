@@ -20,21 +20,21 @@ class _HomeTabState extends State<HomeTab> {
       'like': false
     }),
     Movie.fromMap({
-      'title': '사랑의 불시착',
-      'keyword': '사랑/로맨스/판타지',
-      'poster': 'assets/test_movie_1.png',
+      'title': '미스터 선샤인',
+      'keyword': '사랑/로맨스',
+      'poster': 'assets/test_movie_2.png',
       'like': false
     }),
     Movie.fromMap({
-      'title': '사랑의 불시착',
-      'keyword': '사랑/로맨스/판타지',
-      'poster': 'assets/test_movie_1.png',
+      'title': '태양의 후예',
+      'keyword': '사랑',
+      'poster': 'assets/test_movie_3.png',
       'like': false
     }),
     Movie.fromMap({
-      'title': '사랑의 불시착',
-      'keyword': '사랑/로맨스/판타지',
-      'poster': 'assets/test_movie_1.png',
+      'title': '스물다섯 스물하나',
+      'keyword': '사랑/로맨스',
+      'poster': 'assets/test_movie_4.png',
       'like': false
     }),
   ];
