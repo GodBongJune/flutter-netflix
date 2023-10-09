@@ -111,7 +111,25 @@ class _DeatailScreenState extends State<DeatailScreen> {
                                   padding: EdgeInsets.fromLTRB(0, 45, 0, 10),
                                   child: Image.asset(widget.movie.poster),
                                   height: 300,
-                                )
+                                ),
+                                Container(
+                                  padding: EdgeInsets.all(7),
+                                  child: Text(
+                                    "99% 일치 2019 15+ 시즌 1개",
+                                    textAlign: TextAlign.center,
+                                    style: TextStyle(fontSize: 13),
+                                  ),
+                                ),
+                                Container(
+                                  padding: EdgeInsets.all(7),
+                                  child: Text(
+                                    widget.movie.title,
+                                    textAlign: TextAlign.center,
+                                    style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 16),
+                                  ),
+                                ),
                               ],
                             ),
                           ),
