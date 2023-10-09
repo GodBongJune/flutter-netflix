@@ -130,6 +130,23 @@ class _DeatailScreenState extends State<DeatailScreen> {
                                         fontSize: 16),
                                   ),
                                 ),
+                                Container(
+                                  padding: EdgeInsets.all(3),
+                                  child: TextButton(
+                                    onPressed: () {},
+                                    style: TextButton.styleFrom(
+                                        foregroundColor: Colors.white,
+                                        backgroundColor: Colors.red),
+                                    child: Row(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.center,
+                                      children: <Widget>[
+                                        Icon(Icons.play_arrow),
+                                        Text("재생"),
+                                      ],
+                                    ),
+                                  ),
+                                ),
                               ],
                             ),
                           ),
