@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:netflix/components/carousel_image.dart';
 import 'package:netflix/components/top_bar.dart';
 import 'package:netflix/model/model_movie.dart';
+import 'package:netflix/widget/box_slider.dart';
 import 'package:netflix/widget/circle_slider.dart';
 
 class HomeTab extends StatefulWidget {
@@ -55,34 +56,9 @@ class _HomeTabState extends State<HomeTab> {
             TopBar(),
           ],
         ),
-        CircleSlider(movies: movies)
+        CircleSlider(movies: movies),
+        BoxSlider(movies: movies)
       ],
-    );
-  }
-}
-
-class CircleSlider extends StatelessWidget {
-  late final List<Movie> movies;
-
-  CircleSlider({required this.movies});
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      padding: EdgeInsets.all(7),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: <Widget>[
-          Text("미리보기"),
-          Container(
-            height: 120,
-            child: ListView(
-              scrollDirection: Axis.horizontal,
-              children: makeCircleImages(movies),
-            ),
-          ),
-        ],
-      ),
     );
   }
 }

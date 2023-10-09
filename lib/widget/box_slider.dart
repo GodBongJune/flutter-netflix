@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:netflix/model/model_movie.dart';
 
-class CircleSlider extends StatelessWidget {
+class BoxSlider extends StatelessWidget {
   late final List<Movie> movies;
 
-  CircleSlider({required this.movies});
+  BoxSlider({required this.movies});
 
   @override
   Widget build(BuildContext context) {
@@ -13,21 +13,21 @@ class CircleSlider extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
-          Text("미리보기"),
+          Text("지금 뜨는 컨텐츠"),
           Container(
             height: 120,
             child: ListView(
               scrollDirection: Axis.horizontal,
-              children: makeCircleImages(movies),
+              children: makeBoxImages(movies),
             ),
-          ),
+          )
         ],
       ),
     );
   }
 }
 
-List<Widget> makeCircleImages(List<Movie> movies) {
+List<Widget> makeBoxImages(List<Movie> movies) {
   List<Widget> results = [];
   for (var i = 0; i < movies.length; i++) {
     results.add(
@@ -37,10 +37,7 @@ List<Widget> makeCircleImages(List<Movie> movies) {
           padding: EdgeInsets.only(right: 10),
           child: Align(
             alignment: Alignment.centerLeft,
-            child: CircleAvatar(
-              backgroundImage: AssetImage(movies[i].poster),
-              radius: 48,
-            ),
+            child: Image.asset(movies[i].poster),
           ),
         ),
       ),
