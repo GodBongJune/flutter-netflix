@@ -18,7 +18,7 @@ class BottomBar extends StatelessWidget {
             BottomTab("Home", Icons.home),
             BottomTab("Searh", Icons.search),
             BottomTab("Save", Icons.save_alt),
-            BottomTab("List", Icons.list),
+            BottomTab("More", Icons.list),
           ],
         ),
       ),

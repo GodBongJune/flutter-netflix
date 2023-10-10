@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:netflix/components/bottom_bar.dart';
 import 'package:netflix/pages/home_tab.dart';
+import 'package:netflix/pages/more_tab.dart';
 import 'package:netflix/theme.dart';
 
 void main() {
@@ -30,7 +31,7 @@ class _MyAppState extends State<MyApp> {
               HomeTab(),
               Container(child: Center(child: Text("Search"))),
               Container(child: Center(child: Text("Save"))),
-              Container(child: Center(child: Text("List"))),
+              MoreTab(),
             ],
           ),
           bottomNavigationBar: BottomBar(),
