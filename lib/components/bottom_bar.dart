@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:netflix/components/bottom_tab.dart';
 
 class BottomBar extends StatelessWidget {
   const BottomBar({super.key});
@@ -14,34 +15,10 @@ class BottomBar extends StatelessWidget {
           unselectedLabelColor: Colors.white60,
           indicatorColor: Colors.transparent,
           tabs: <Widget>[
-            Tab(
-              icon: Icon(
-                Icons.home,
-                size: 18,
-              ),
-              child: Text("Home", style: TextStyle(fontSize: 9)),
-            ),
-            Tab(
-              icon: Icon(
-                Icons.search,
-                size: 18,
-              ),
-              child: Text("Serach", style: TextStyle(fontSize: 9)),
-            ),
-            Tab(
-              icon: Icon(
-                Icons.save_alt,
-                size: 18,
-              ),
-              child: Text("Save", style: TextStyle(fontSize: 9)),
-            ),
-            Tab(
-              icon: Icon(
-                Icons.list,
-                size: 18,
-              ),
-              child: Text("List", style: TextStyle(fontSize: 9)),
-            ),
+            BottomTab("Home", Icons.home),
+            BottomTab("Searh", Icons.search),
+            BottomTab("Save", Icons.save_alt),
+            BottomTab("List", Icons.list),
           ],
         ),
       ),

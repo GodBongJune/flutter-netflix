@@ -63,3 +63,24 @@ class _HomeTabState extends State<HomeTab> {
     );
   }
 }
+
+class MoreScreen extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      child: Center(
+        child: Column(
+          children: <Widget>[
+            Padding(
+              padding: EdgeInsets.only(top: 50),
+              child: CircleAvatar(
+                radius: 100,
+                // backgroundImage: AssetImage("assets/bbongflix_logo.png"),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}

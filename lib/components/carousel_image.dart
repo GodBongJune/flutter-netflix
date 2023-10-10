@@ -1,7 +1,7 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:netflix/model/model_movie.dart';
-import 'package:netflix/pages/detail_page.dart';
+import 'package:netflix/pages/detail_tab.dart';
 import 'package:netflix/pages/home_tab.dart';
 
 class CarouselImage extends StatefulWidget {
